@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <ExampleSelective/> -->
+  <!-- <ClassBind/> -->
+  <ExampleEvent/>
+  <ExampleFor />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import ExampleEvent from './components/ExampleEvent.vue';
+// import ClassBind from './components/ClassBind.vue';
+// import ExampleFor from './components/ExampleFor.vue';
+// import ExampleSelective from './components/ExampleSelective.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background-color: #ccc;
 }
 </style>

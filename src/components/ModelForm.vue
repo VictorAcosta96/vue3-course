@@ -13,11 +13,14 @@
 </template>
 
 <script>
- import {defineComponent } from 'vue';
+ import {defineComponent,ref } from 'vue';
 export default defineComponent({
     name:"ModelForm",
-    data(){
-        return {inputText:"",agree:true,teams:"ManUtd"}
+    setup(){
+        let inputText = ref('')
+        let agree = ref(true)
+        let teams = ref('Milan')
+        return {inputText,agree,teams}
     }
 })
 </script>

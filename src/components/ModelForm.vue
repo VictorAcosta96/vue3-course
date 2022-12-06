@@ -6,10 +6,15 @@
     <h3>{{inputText}}</h3>
 </template>
 
-<script setup>
- import { ref } from 'vue';
-
- let inputText = ref('')
+<script>
+ import { ref, defineComponent } from 'vue';
+export default defineComponent({
+    name:"ModelForm",
+    setup(){
+        let inputText = ref('')
+        return {inputText}
+    }
+})
 </script>
 
 <style scoped>

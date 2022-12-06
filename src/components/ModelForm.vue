@@ -7,12 +7,11 @@
 </template>
 
 <script>
- import { ref, defineComponent } from 'vue';
+ import {defineComponent } from 'vue';
 export default defineComponent({
     name:"ModelForm",
-    setup(){
-        let inputText = ref('')
-        return {inputText}
+    data(){
+        return {inputText:""}
     }
 })
 </script>

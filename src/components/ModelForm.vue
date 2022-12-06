@@ -12,17 +12,11 @@
     <h3>{{inputText}}</h3>
 </template>
 
-<script>
- import {defineComponent,ref } from 'vue';
-export default defineComponent({
-    name:"ModelForm",
-    setup(){
+<script setup>
+ import {ref } from 'vue';
         let inputText = ref('')
         let agree = ref(true)
-        let teams = ref('Milan')
-        return {inputText,agree,teams}
-    }
-})
+        let teams = ref('ManUtd')
 </script>
 
 <style scoped>
